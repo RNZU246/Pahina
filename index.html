@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fil">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahina - Isang Tula ni rans_akrn</title>
+    <meta name="description" content="Tuklasin ang 'Pahina,' isang emosyonal at makasaysayang tulang Filipino ni rans_akrn. Damhin ang bigat ng mga salita sa isang disenyo na nagpapaalala sa isang lumang manuskrito. Explore 'Pahina,' an emotional historical Filipino poem by rans_akrn. Experience the weight of the words through a design reminiscent of an antique manuscript.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0E1119;
+            font-family: 'Lora', serif;
+        }
+
+        .manuscript-wrapper {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .manuscript {
+            background-color: #FBF8E0;
+            background-image: url('https://placehold.co/1000x1000/FBF8E0/FBF8E0?text=%20');
+            background-size: cover;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Lora', serif;
+            color: #4A3E38;
+            padding: 4rem;
+            position: relative;
+        }
+
+        .title-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+        }
+
+        .byline-text {
+            font-family: 'Playwrite AU NSW', cursive;
+            font-style: italic;
+        }
+
+        .poem-container p {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .poem-container br {
+            line-height: 2.2;
+        }
+
+        .border-manuscript {
+            position: relative;
+            padding: 1.5rem;
+        }
+
+        .border-manuscript:before,
+        .border-manuscript:after {
+            content: '';
+            position: absolute;
+            border: 2px solid #D4BE98;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            border-radius: 1rem;
+        }
+
+        .border-manuscript:after {
+            border-width: 1px;
+            top: 1rem;
+            left: 1rem;
+            right: 1rem;
+            bottom: 1rem;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 640px) {
+            .manuscript {
+                padding: 2rem;
+            }
+            .border-manuscript {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen p-4 sm:p-8 md:p-12">
+    <!-- Wrapper to contain the subtle floating animation -->
+    <div class="manuscript-wrapper max-w-5xl w-full mx-auto relative">
+        <div class="border-manuscript">
+            <!-- Main manuscript container -->
+            <div class="manuscript">
+
+                <!-- Header section -->
+                <header class="text-center mb-12">
+                    <h1 class="title-text text-5xl md:text-7xl font-bold mb-2 text-center">Pahina</h1>
+                    <p class="byline-text text-xl md:text-2xl text-center">ni rans_akrn</p>
+                    <div class="w-24 h-24 mx-auto mt-4">
+                        <img src="https://cdn.creazilla.com/cliparts/7767278/quill-pen-ink-and-paper-clipart-md.png" alt="Quill and Ink Illustration" class="w-full h-full object-contain">
+                    </div>
+                </header>
+
+                <!-- Poem content section -->
+                <main class="poem-container text-justify text-xl md:text-2xl">
+                    <p>
+                        Sa bawat patak ng tinta, sa dulo ng aking pluma,<br>
+                        Ay patak ng luha mula sa pusong nabasag, nadurog, nabalisa,<br>
+                        Isang dagat ng pait na tumapon sa blankong pahina.<br>
+                        Ikaw ang unang pahina, ang unang kabanata ng nobelang binuo,<br>
+                        Ngunit bakit ang aklat na akala ko'y walang katapusan, biglang sinarhan, iniwang pahinang luha ang tanging laman.
+                    </p>
+
+                    <p>
+                        Sa bawat pahina na nililiko ng hangin, ang iyong pangalan ang hagulgol ng isip,<br>
+                        Sa bawat linya na sinulat ko, ang iyong mukha ang multo ng nakaraan.<br>
+                        Ang iyong mga pangako ay mga salitang gumuhit ng punit sa aking kaluluwa,<br>
+                        Ngunit bakit ang pangakong ikaw at ako hanggang dulo ay naging pangako na lang,<br>
+                        Isang liham na natunaw sa ulan, isang libro na walang laman?
+                    </p>
+
+                    <p>
+                        Ang bawat kabanata na dumaan, ay pagpapaalala sa kung paano mo ako binitawan,<br>
+                        Ang bawat salita na sinulat ko, ay tila mga panaghoy na sumisigaw sa hangin,<br>
+                        Ang bawat kuwento na binuo ko, ay salamin ng nakaraan,<br>
+                        Isang kuwento na itinago sa hukay, isang kabanatang hindi na mabibigyan ng panibagong simula.
+                    </p>
+
+                    <p>
+                        Sa bawat pahinang aking pinunit, ikaw ang anino ng nakaraan na sumisigaw sa gunita<br>
+                        Ang sakit na dulot mo ay tila isang tintang nagmarka ng apoy,<br>
+                        Isang marka na nag-iwan ng permanenteng peklat sa aking puso,<br>
+                        At tila ba ang bawat letra ay sumabog na bala sa aking isipan,<br>
+                        Nagpapaalala sa kung paano ako nasugatan,<br>
+                        Sa kung paano mo ako winakasan.
+                    </p>
+
+                    <p>
+                        Ngunit ang isang manunulat na nabalian ng pluma ay hindi na makakasulat pa,<br>
+                        Dahil sa paghinto ng ating kuwento, ang aking buhay ay naging pahinang blangko.<br>
+                        Ang bawat sugat ay nanatiling sugat, ang bawat sakit ay nanatiling bangungot,<br>
+                        At ang bawat luha ay dumadaloy na parang ilog na walang patutunguhan,<br>
+                        Isang aklat na nananatiling walang laman, isang pahinang blangko.<br>
+                        Dahil ang isang manunulat ay natatapos kapag nawalan ng inspirasyon,<br>
+                        Ang bawat aklat ay may katapusan, ngunit ang buhay ko ay walang simula.<br>
+                        Ang bawat sugat ay nagiging hantungan, at ang bawat pahina ay nagiging abo ng alaala ng kasawian.
+                    </p>
+                </main>
+
+                <!-- Footer section -->
+                <footer class="text-center mt-12 text-sm text-gray-500">
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
